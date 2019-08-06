@@ -1,0 +1,2 @@
+# common-property-configuration
+curd
