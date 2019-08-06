@@ -17,9 +17,9 @@ import (
     p "Madongming/common-property-configuration"
 )
  
-p.Create(obj InterStorage, key, data string)
-p.Update(obj InterStorage, key, data string)
-p.Read(obj InterStorage, key string) (string, error)
-p.Delete(obj InterStorage, key string)
+err := p.Create(obj InterStorage, key, data string)
+err = p.Update(obj InterStorage, key, data string)
+value, err := p.Read(obj InterStorage, key string)
+value, err = p.Delete(obj InterStorage, key string)
 ```
 For CURD your property.
